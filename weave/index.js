@@ -1,23 +1,3 @@
-//function weave(sourceOne, sourceTwo) {
-// const Queue = require('./queue');
-   
-// const queueOne = new Queue();
-// queueOne.add(1);
-// queueOne.add(2);
-// queueOne.add(3);
-
-// const queueTwo = new Queue();
-// queueTwo.add('Hi');
-// queueTwo.add('There');
-// let q = new Queue();
-
-// var q = weave(queueOne, queueTwo);
-// console.log(q.remove()); //=> 1
-// console.log(q.remove()); //=> 2 
-// console.log(q.peek()) 
-// console.log(q.remove());  
-// console.log(q.peek()); 
-
 const Queue = require('./queue');
 
 function weave(sourceOne, sourceTwo) {
@@ -41,3 +21,20 @@ function weave(sourceOne, sourceTwo) {
   // return the queue
   return q;
 }
+const queueOne = new Queue();
+queueOne.add(1);
+queueOne.add(2);
+queueOne.add(3);
+
+const queueTwo = new Queue();
+queueTwo.add('Hi');
+queueTwo.add('There');
+//var q = new Queue();
+
+const q = weave(queueOne, queueTwo);
+q.remove(); //=> 1
+q.remove() //=> 2 
+q.peek()
+q.remove();  
+q.peek() 
+console.log(q)
