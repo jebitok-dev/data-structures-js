@@ -19,3 +19,16 @@ function capitalize(str) {
     }
     return words.join(' ');
 }
+
+// function makeUpperCase(str){
+//     let bigLetters = [];
+//     for (var i = 0; i < str.length; i++){
+//       let large = str[i].toUpperCase();
+//       bigLetters.push(large);
+  
+//       // console.log(bigLetters)
+//     }
+//     return bigLetters.join('');
+    
+//   }
+// console.log(makeUpperCase('edward'));
