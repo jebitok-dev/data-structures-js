@@ -35,3 +35,6 @@ function fib(n) {
 
 //[0,1,1,2];
 
+function reverse(n) {
+    const result = [5,4,3,2,1];
+}
